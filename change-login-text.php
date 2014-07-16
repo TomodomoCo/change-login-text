@@ -16,11 +16,11 @@ Author URI: https://www.vanpattenmedia.com/
  */
 function vpm_username_to_email( $buffer ) {
 	// Login page
-	$buffer = str_replace( 'Username',     'Email Address', $buffer );
+	$buffer = str_replace( 'Username', 'Email Address', $buffer );
 
 	// Password reset page
 	$buffer = str_replace( 'username or ', '', $buffer );
-	$buffer = str_replace( ' or E-mail',    '', $buffer );
+	$buffer = str_replace( ' or E-mail', '', $buffer );
 
 	// Send it back
 	return $buffer;
